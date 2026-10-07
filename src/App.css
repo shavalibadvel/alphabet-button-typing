@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f4f6f8; /* Light gray background */
+  background-color: #f4f6f8; 
 }
 
 .app-container {
@@ -40,7 +40,6 @@ h1 {
   margin-bottom: 25px;
 }
 
-/* Output Area */
 .output {
   border: 1px solid #cbd5e1;
   border-radius: 8px;
@@ -54,7 +53,6 @@ h1 {
   transition: border-color 0.2s;
 }
 
-/* Backspace Button */
 .backspace-container {
   display: flex;
   justify-content: flex-end;
@@ -77,7 +75,6 @@ h1 {
   background-color: #f1f5f9;
 }
 
-/* Keyboard Grid */
 .keyboard-grid {
   display: grid;
   grid-template-columns: repeat(13, 1fr);
@@ -110,7 +107,7 @@ h1 {
   transform: translateY(1px);
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .keyboard-grid {
     grid-template-columns: repeat(7, 1fr);
