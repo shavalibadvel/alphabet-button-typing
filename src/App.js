@@ -4,17 +4,15 @@ import './App.css';
 function App() {
   const [text, setText] = useState('');
 
-  // Handle clicking a letter button
+
   const handleLetterClick = (letter) => {
     setText((prev) => prev + letter);
   };
 
-  // Handle backspace button click
   const handleBackspace = () => {
     setText((prev) => prev.slice(0, -1));
   };
 
-  // Optional: Handle physical keyboard input based on subtitle
   useEffect(() => {
     const handleKeyDown = (e) => {
       if (e.key >= 'a' && e.key <= 'z') {
@@ -37,7 +35,6 @@ function App() {
         <h1>Alphabet Buttons</h1>
         <p className="subtitle">Click letters (or use your keyboard) to build text.</p>
         
-        {/* Test expects a div with className="output" */}
         <div className="output">
           {text || 'Your text will appear here...'}
         </div>
@@ -46,7 +43,6 @@ function App() {
           <button className="backspace-btn" onClick={handleBackspace}>Backspace</button>
         </div>
 
-        {/* Test expects keys to have className="key" */}
         <div className="keyboard-grid">
           {alphabet.map((letter) => (
             <button 
